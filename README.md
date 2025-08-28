@@ -9,6 +9,7 @@ Este repositorio contiene **soluciones a los ejercicios** y **proyectos práctic
 ```
 📦 nodejs-curso
 ├── 📂 01-fundamentos
+├── 📂 02-bases
 ├── README.md
 ```
 
