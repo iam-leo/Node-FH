@@ -28,8 +28,11 @@ Este repositorio contiene **soluciones a los ejercicios** y **proyectos práctic
 
 ## 👨‍🏫 Autor del curso
 
-Curso impartido por **Fernando Herrera**  
-[Ver curso en Udemy](https://www.udemy.com/course/nodejs-de-cero-a-experto/)
+Curso impartido por [**Fernando Herrera**](https://fernando-herrera.com/)
+
+[Ver curso en **Devtalles**](https://cursos.devtalles.com/courses/nodejs-de-cero-a-experto)
+
+[Ver curso en **Udemy**](https://www.udemy.com/course/nodejs-de-cero-a-experto/)
 
 ---
 
