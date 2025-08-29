@@ -4,14 +4,16 @@
 
 //require('./js-foundation/02-destructuring');
 
-const { getUserById } = require('./js-foundation/03-callbacks');
+//const { getUserById } = require('./js-foundation/03-callbacks');
+
+require('./js-foundation/05-factory');
 
 
 // console.log("Hola mundo desde app.js!");
 
 // console.log( emailTemplate );
 
-getUserById(2, (error, user) => {
+/* getUserById(2, (error, user) => {
     if (error) {
         return console.log(error);
     }
@@ -25,4 +27,4 @@ getUserById(5, (error, user) => {
     }
 
     console.log(user);
-});
+}); */
