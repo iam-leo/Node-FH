@@ -6,7 +6,9 @@
 
 //const { getUserById } = require('./js-foundation/03-callbacks');
 
-require('./js-foundation/05-factory');
+const { getId, getAge } = require('./plugins');
+
+const { buildMakePerson } = require('./js-foundation/05-factory');
 
 
 // console.log("Hola mundo desde app.js!");
@@ -28,3 +30,14 @@ getUserById(5, (error, user) => {
 
     console.log(user);
 }); */
+
+// CREAR UNA PERSONA
+const makePerson = buildMakePerson( getId, getAge );
+
+const obj = {
+    name: 'Leo',
+    birthday: '1990-10-11'
+}
+
+const leo = makePerson(obj);
+console.log(leo);
