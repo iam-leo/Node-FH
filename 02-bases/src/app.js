@@ -48,6 +48,14 @@ console.log(leo); */
 // >> Clase 06
 
 // USAR PROMESAS
-console.log( getPokemonById( 25, ( pokemon ) => {
+/* console.log( getPokemonById( 25, ( pokemon ) => {
     console.log( pokemon );
 } ));
+ */
+
+// >> Clase 07
+// MANEJO DE ERRORES
+getPokemonById( 25 )
+    .then( pokemon => console.log( { pokemon } ) )
+    .catch( err => console.warn( "Algo falló - ", err ) )
+    .finally( () => console.log( "Proceso terminado" ) );
