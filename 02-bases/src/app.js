@@ -10,6 +10,7 @@ const { getId, getAge } = require('./plugins');
 
 const { buildMakePerson } = require('./js-foundation/05-factory');
 
+const { getPokemonById } = require('./js-foundation/06-promises');
 
 // console.log("Hola mundo desde app.js!");
 
@@ -31,8 +32,9 @@ getUserById(5, (error, user) => {
     console.log(user);
 }); */
 
+// >> Clase 05
 // CREAR UNA PERSONA
-const makePerson = buildMakePerson( getId, getAge );
+/* const makePerson = buildMakePerson( getId, getAge );
 
 const obj = {
     name: 'Leo',
@@ -40,4 +42,12 @@ const obj = {
 }
 
 const leo = makePerson(obj);
-console.log(leo);
+console.log(leo); */
+
+
+// >> Clase 06
+
+// USAR PROMESAS
+console.log( getPokemonById( 25, ( pokemon ) => {
+    console.log( pokemon );
+} ));
