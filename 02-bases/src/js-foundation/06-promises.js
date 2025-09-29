@@ -1,17 +1,26 @@
-const getPokemonById = ( id, callback ) => {
+const getPokemonById = async ( id ) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${ id }`;
 
-    return fetch( url )
-        // >> Clase 06
+    // return fetch( url )
+        // >> Clase 06 ( video 33 )
         /* .then( resp => resp.json() )
         .then( pokemon => {
             callback( pokemon.name );
         }) */
 
-        // >> Clase 07
-        .then( resp => resp.json() )
+        // >> Clase 07 ( video 34 )
+        // .then( resp => resp.json() )
         // .then( () => { throw new Error('No se pudo obtener el pokemon') } )
-        .then( pokemon => pokemon.name )
+        // .then( pokemon => pokemon.name )
+
+        // >> Clase 08 ( video 35 )
+        const resp = await fetch( url );
+
+        const pokemon = await resp.json();
+
+        // throw new Error('No se pudo obtener el pokemon');
+
+        return pokemon.name;
 };
 
 module.exports = {
