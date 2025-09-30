@@ -12,6 +12,8 @@ const { buildMakePerson } = require('./js-foundation/05-factory');
 
 const { getPokemonById } = require('./js-foundation/06-promises');
 
+const { buildLogger } = require('./plugins'); // ( video 42 )
+
 // console.log("Hola mundo desde app.js!");
 
 // console.log( emailTemplate );
@@ -55,7 +57,12 @@ console.log(leo); */
 
 // >> Clase 07
 // MANEJO DE ERRORES
-getPokemonById( 25 )
-    .then( pokemon => console.log( { pokemon } ) )
-    .catch( err => console.warn( "Algo falló - ", err ) )
-    .finally( () => console.log( "Proceso terminado" ) );
+// getPokemonById( 25 )
+//     .then( pokemon => console.log( { pokemon } ) )
+//     .catch( err => console.warn( "Algo falló - ", err ) )
+//     .finally( () => console.log( "Proceso terminado" ) );
+
+// >> Clase 08 ( video 42 )
+
+const logger = buildLogger( 'app.js' );
+logger.log( 'Iniciando la aplicacion' );
