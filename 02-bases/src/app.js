@@ -66,3 +66,4 @@ console.log(leo); */
 
 const logger = buildLogger( 'app.js' );
 logger.log( 'Iniciando la aplicacion' );
+logger.error( 'Esto es un error de prueba' );
