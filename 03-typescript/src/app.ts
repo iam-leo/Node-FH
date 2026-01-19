@@ -6,10 +6,10 @@ const heroes = [
   { id: 5, name: 'Hulk', owner: 'Marvel' },
 ]
 
-const findHeroById = (id) => {
+const findHeroById = (id: number) => {
   return heroes.find(hero => hero.id === id);
 }
 
 // Example usage:
 const hero = findHeroById(2);
-console.log(hero); // { id: 3, name: 'Ironman', owner: 'Marvel' }
+console.log(hero?.name ?? 'Hero not found!!!'); // { id: 3, name: 'Ironman', owner: 'Marvel' }
